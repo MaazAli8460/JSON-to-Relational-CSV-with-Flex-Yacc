@@ -30,13 +30,13 @@ sudo apt-get install byacc-j
 3. Running
 	Use the following command to run the tool:
 
-	./json2relcsv <input.json> [--print-ast] [--out-dir] [DIR_NAME]
-	<input.json>: Path to the input JSON file.
-	[DIR_NAME]: Where you want your output files to go
+	- ./json2relcsv <input.json> [--print-ast] [--out-dir] [DIR_NAME]
+	- <input.json>: Path to the input JSON file.
+	- [DIR_NAME]: Where you want your output files to go
 
 
-	--print-ast: (Optional) Prints the AST to stdout.
-	--out-dir DIR: (Optional) Specifies the output directory for CSV files (default: makes a DIR based on the name of .json file like <input.json> -> <input_out> ).
+	- --print-ast: (Optional) Prints the AST to stdout.
+	- --out-dir DIR: (Optional) Specifies the output directory for CSV files (default: makes a DIR based on the name of .json file like <input.json> -> <input_out> ).
 4. run <make clean> to remove previous bison generated .c files like <parser.tab.c> etc.
 
 ## Design Notes
@@ -76,5 +76,5 @@ sudo apt-get install byacc-j
 	Large JSON inputs (>30 MiB) may require further optimization.
 
 # References:
-	- [Flex Manual](https://westes.github.io/flex/manual/)
-	- [Bison (Yacc) Manual](https://www.gnu.org/software/bison/manual/)
+- [Flex Manual](https://westes.github.io/flex/manual/)
+- [Bison (Yacc) Manual](https://www.gnu.org/software/bison/manual/)
